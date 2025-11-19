@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexandros Kourtis</title>
-    <meta name="description" content="Software developer portfolio">
-    <link rel="stylesheet" href="styles.css?v=2">
+    <title>Alexandros Kourtis - Software Engineer</title>
+    <meta name="description" content="Full Stack Engineer specializing in Laravel, React, Vue, and enterprise PMS systems">
+    <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
     <!-- Sidebar -->
     <aside class="sidebar">
         <div class="sidebar-content">
             <div class="profile-section">
-                <img src="assets/profile.jpg" alt="Profile Photo" class="profile-photo">
+                <img src="assets/profile.jpg" alt="Alexandros Kourtis" class="profile-photo">
                 <a href="#" class="nav-link">Home 🏠</a>
             </div>
 
             <div class="social-links">
-                <a href="https://github.com/alexkourtis98" target="_blank" rel="noopener noreferrer">alexkourtis98</a>
+                <a href="https://github.com/alexkourtis98" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://stackoverflow.com/users/your-profile" target="_blank" rel="noopener noreferrer">Stack Overflow</a>
                 <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:akourtisdev@gmail.com">Email</a>
             </div>
         </div>
     </aside>
@@ -26,38 +28,218 @@
     <!-- Main Content -->
     <main class="main-content">
         <h1>Alexandros Kourtis</h1>
+        <p class="subtitle">Software Engineer</p>
+        <p class="location">Athens, Greece • +30 698 944 2438 • <a href="mailto:akourtisdev@gmail.com">akourtisdev@gmail.com</a></p>
 
-        <p class="intro">Hello! I'm a software developer and technology enthusiast.</p>
+        <h2>Professional Summary</h2>
+        <p>Full Stack Engineer with 4+ years of professional experience delivering complex, high-availability systems for hospitality tech and analytics platforms. Specializes in <strong>enterprise-grade PMS/booking engines</strong>, <strong>API integrations</strong>, <strong>Dockerized microservices</strong>, and <strong>scalable backend architectures</strong>.</p>
 
-        <p class="intro">You can check out my work experience below!</p>
+        <p>Strong focus on clean code (SOLID), performance optimization (50-100x improvements), and production-ready DevOps pipelines. Expert in Laravel, Symfony, React, Vue, Livewire, and multi-tenant systems with 18+ language support. Fast learner, highly adaptable, and capable of owning projects end-to-end.</p>
 
         <h2>Work Experience</h2>
 
+        <!-- HotelPoint -->
         <div class="job">
             <div class="job-header">
-                <h3>Thunderbird</h3>
-                <span class="date">2022 - Current</span>
+                <h3>HotelPoint (Mykonian Revenue Management)</h3>
+                <span class="date">2024 - 2025</span>
             </div>
+            <p class="job-title">Full Stack Developer</p>
 
-            <p><a href="https://www.thunderbird.net" target="_blank" rel="noopener noreferrer">Website</a></p>
+            <p><strong>Modernized and scaled enterprise PMS + booking engine ecosystem used by 50+ hotels</strong></p>
 
-            <p>I'm currently a Staff Software Engineer, Services at Thunderbird.</p>
+            <p><strong>Architecture & Core Development:</strong></p>
+            <ul>
+                <li>Contributing <strong>2,994 commits (70.6% of 2024 development)</strong> to enterprise PMS with 2,219 PHP files, 103 controllers, 200+ models</li>
+                <li>Built <strong>3 systems from scratch</strong>: Core PMS, GuestPoint (470 files, 44 commits), Housekeeping Portal (193 files, 10 commits)</li>
+                <li>Led <strong>Laravel 8→10 migration + Livewire 2→3.6 upgrade</strong> with critical security fixes (plain-text auth→bcrypt, mass assignment, XSS)</li>
+                <li>Delivered <strong>2 white-label solutions</strong> (InnDoPMS + BookiLine) with custom branding and client features</li>
+                <li>Re-architected legacy code into modern <strong>SOLID-compliant</strong> Laravel 10 codebase (service/repository, DTOs, action classes)</li>
+            </ul>
 
-            <p>I primarily work on services like <a href="https://docs.thunderbird.net/thunderbird-appointment" target="_blank" rel="noopener noreferrer">Thunderbird Appointment</a> along with triaging github issues, fixing bugs, and adding new features on projects such as <a href="https://thunderbird.net" target="_blank" rel="noopener noreferrer">thunderbird.net</a> and <a href="https://addons.thunderbird.net" target="_blank" rel="noopener noreferrer">addons.thunderbird.net</a>.</p>
+            <p><strong>DevOps & Infrastructure:</strong></p>
+            <ul>
+                <li><strong>Email Infrastructure:</strong> Configured Zoho Mail and SMTP2Go for transactional email delivery with SPF/DKIM/DMARC records</li>
+                <li><strong>Deployment Automation:</strong> Set up Laravel Forge and Envoyer for zero-downtime deployments across multiple environments (reduced deployment time from 45 min to 8 min)</li>
+                <li><strong>AWS Infrastructure:</strong> Architected S3 bucket policies, IAM roles, access configurations for file storage and backups across 50+ properties</li>
+                <li><strong>Server Management:</strong> Configured production/staging environments with automated deployment pipelines</li>
+            </ul>
+
+            <p><strong>Performance & System Integration:</strong></p>
+            <ul>
+                <li>Achieved <strong>50-100x performance improvement</strong> through N+1 elimination across 2,200+ files</li>
+                <li>Built Universal Email Tracking System v2.0 with 100% duplicate elimination (5-phase implementation)</li>
+                <li>Integrated Stripe & Nexi payment gateways with production emergency fixes (critical 405 error resolution)</li>
+                <li>Implemented <strong>18-language internationalization</strong> including RTL (Arabic) across ALL modules (20+ translation commits)</li>
+                <li>Integrated <strong>OTA channel managers</strong> (Channex API), payment gateways, B2B travel agency APIs</li>
+                <li>Engineered <strong>Laravel Horizon</strong> with 4 priority queues for async processing</li>
+            </ul>
+
+            <p><strong>Frontend & Code Quality:</strong></p>
+            <ul>
+                <li>Professional JavaScript refactoring with SOLID principles (<strong>238+ optimization commits</strong>)</li>
+                <li>Comprehensive code quality: Laravel Pint (PSR-12), ESLint, Prettier, Husky pre-commit hooks</li>
+                <li><strong>350+ bug fix commits, 93+ feature commits</strong></li>
+                <li>Finance module 100% completion with zero known issues</li>
+                <li>Massive calendar/housekeeping optimization (~2.5MB legacy code removal)</li>
+            </ul>
+
+            <p><strong>Technologies:</strong> Laravel 8-10, Livewire 2-3.6, PHP 8.2, React, Vue 3, TypeScript, MySQL 8, Redis, Docker, Nginx, AWS (S3, SES, IAM), Laravel Horizon, Sanctum, Zoho Mail, SMTP2Go, Laravel Forge, Envoyer, Channex API, Stripe, Nexi, PHPUnit, Pest PHP, OAuth2</p>
         </div>
 
+        <!-- Booking Engine -->
         <div class="job">
             <div class="job-header">
-                <h3>AvenueHQ</h3>
-                <span class="date">2017 - 2022</span>
+                <h3>Booking Engine Project</h3>
+                <span class="date">2023 - 2025</span>
             </div>
+            <p class="job-title">Lead Developer</p>
 
-            <p><a href="https://www.avenuehq.com" target="_blank" rel="noopener noreferrer">Website</a></p>
+            <ul>
+                <li><strong>18 languages</strong> with RTL support for Arabic, full WCAG 2.1 AA compliance</li>
+                <li>Channex API integration, Nexi Xpay & Epay payment gateways</li>
+                <li>Google Maps, Google Analytics 4, Firebase integration</li>
+                <li>Multi-tenant architecture with white-label customization for different hotels</li>
+                <li>SEO optimization, responsive design, PWA support</li>
+                <li>Delivered <strong>95% complete in 5 days</strong> (11 commits) showcasing rapid enterprise development</li>
+                <li>Configured AWS S3 for image storage with bucket policies and CDN integration</li>
+            </ul>
 
-            <p>From 2017 to 2022 I was a Full-Stack Developer working at AvenueHQ.</p>
-
-            <p>I've worked on a wide array of projects such as architecting and building a semi-automated task system to help reduce repetitive and time costly activities. I've also worked on upgrading and reducing technical debt on both front-end and back-end projects.</p>
+            <p><strong>Technologies:</strong> Laravel 10, Vue 3, TypeScript, Vite 7, Channex API, Google Maps API, Google Analytics 4, AWS S3, Nexi Xpay</p>
         </div>
+
+        <!-- HelpPoint -->
+        <div class="job">
+            <div class="job-header">
+                <h3>HelpPoint</h3>
+                <span class="date">2023 - 2025</span>
+            </div>
+            <p class="job-title">Full Stack Developer</p>
+
+            <ul>
+                <li>Laravel Horizon with <strong>4 priority queues</strong> for ticket processing</li>
+                <li><strong>5 role-based user types</strong> (admin, agent, manager, guest, staff)</li>
+                <li>PWA support with Web Push notifications (VAPID)</li>
+                <li>Comprehensive CI/CD pipeline with GitHub Actions</li>
+                <li>Real-time ticket updates with Laravel WebSockets</li>
+                <li>Configured AWS infrastructure (S3, SES), Laravel Forge deployment, SMTP2Go email delivery</li>
+            </ul>
+
+            <p><strong>Technologies:</strong> Laravel 12, PHP 8.2, Livewire 3, Alpine.js, MySQL, Redis, Laravel Horizon, Web Push, AWS (S3, SES), Laravel Forge</p>
+        </div>
+
+        <!-- Analytiq -->
+        <div class="job">
+            <div class="job-header">
+                <h3>Analytiq</h3>
+                <span class="date">2023 - 2024</span>
+            </div>
+            <p class="job-title">Software Developer (Node.js / Backend Focus)</p>
+
+            <p>Developed backend-heavy analytics and data-processing tools powering business intelligence workflow automation.</p>
+
+            <ul>
+                <li>Built Node.js microservices for data ingestion, transformation, and scheduled ETL workflows</li>
+                <li>Designed REST endpoints for internal analytics dashboards and reporting tools</li>
+                <li>Implemented Redis-backed caching and queue systems improving data processing throughput</li>
+                <li>Refactored and optimized SQL queries resulting in <strong>~40% faster report generation</strong></li>
+                <li>Collaborated closely with frontend and data teams on new SaaS product modules</li>
+                <li>Containerized services with Docker and deployed to cloud environments</li>
+            </ul>
+
+            <p><strong>Technologies:</strong> Node.js, Express, PHP, MySQL, Redis, Docker, REST APIs, ETL pipelines</p>
+        </div>
+
+        <!-- Digiastar -->
+        <div class="job">
+            <div class="job-header">
+                <h3>Digiastar</h3>
+                <span class="date">2023</span>
+            </div>
+            <p class="job-title">Full Stack Developer (Internship)</p>
+
+            <ul>
+                <li>Built CRM modules using <strong>Scala + Play Framework</strong> and Angular</li>
+                <li>Developed task management tools using <strong>Akka actors</strong> and <strong>WebSockets</strong> for real-time updates</li>
+                <li>Implemented client e-commerce features using PrestaShop and WordPress/WooCommerce</li>
+                <li>Contributed to API development and PostgreSQL schema design</li>
+            </ul>
+
+            <p><strong>Technologies:</strong> Scala, Play Framework, Angular 8, Akka, MySQL, PostgreSQL, WebSockets, PrestaShop, WooCommerce</p>
+        </div>
+
+        <!-- Synergic Software -->
+        <div class="job">
+            <div class="job-header">
+                <h3>Synergic Software</h3>
+                <span class="date">2019</span>
+            </div>
+            <p class="job-title">Full Stack Developer (Summer Position)</p>
+
+            <ul>
+                <li>Assisted in building CRM and operational management systems using Scala + Play</li>
+                <li>Implemented WebSocket features with Akka for real-time updates</li>
+                <li>Developed e-commerce stores and custom integrations for enterprise clients</li>
+            </ul>
+
+            <p><strong>Technologies:</strong> Scala, Play Framework, Angular, MySQL, PostgreSQL, PrestaShop, WooCommerce</p>
+        </div>
+
+        <!-- Deree -->
+        <div class="job">
+            <div class="job-header">
+                <h3>Deree – The American College of Greece</h3>
+                <span class="date">2019 - 2023</span>
+            </div>
+            <p class="job-title">Student Full Stack Developer</p>
+
+            <p>Developer of <strong>Universe</strong>, the university's official event-booking and membership management platform.</p>
+
+            <ul>
+                <li>Built full-stack <strong>Symfony 4 + Angular 9</strong> application used by thousands of students</li>
+                <li>Platform served <strong>10,000+ appointments</strong> and <strong>1,500+ monthly active users</strong></li>
+                <li>Implemented RBAC, JWT auth, automated email/SMS workflows (Twilio), and event scheduling</li>
+                <li>Ratchet WebSocket for real-time features, multi-language support, QR codes, PDF/Excel generation</li>
+                <li>Fully deployed and maintained Linux server infrastructure (Nginx, SSL, backups, DNS)</li>
+                <li>Configured complete email server infrastructure (Postfix/Dovecot) with SPF/DKIM records</li>
+            </ul>
+
+            <p><strong>Technologies:</strong> Symfony 4, Angular 9, PHP 7.4, PostgreSQL, Docker, Linux, Nginx, Ratchet WebSockets, FOSUserBundle, VichUploaderBundle, Twilio, Webpack Encore</p>
+        </div>
+
+        <!-- Motion Hellas Technical Assignment -->
+        <div class="job">
+            <div class="job-header">
+                <h3>Motion Hellas React Technical Assignment</h3>
+                <span class="date">2024</span>
+            </div>
+            <p class="job-title">Technical Assessment Project</p>
+
+            <ul>
+                <li>React 19, TypeScript 5.9, Vite 7 with HMR and tree shaking</li>
+                <li>React Query 5.90 (TanStack Query) for state management and API caching</li>
+                <li>Recharts for data visualization and analytics dashboards</li>
+                <li>Completed in <strong>~2.5 hours</strong> (4x faster than traditional stack)</li>
+                <li><a href="https://motion-hellas-technical-assignment.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a></li>
+            </ul>
+
+            <p><strong>Technologies:</strong> React 19, TypeScript 5.9, Vite 7, React Query 5.90, Recharts, Vercel</p>
+        </div>
+
+        <h2>Languages</h2>
+        <ul>
+            <li><strong>Greek:</strong> Native</li>
+            <li><strong>English:</strong> Fluent (C1)</li>
+            <li><strong>French:</strong> Intermediate (B1 progressing toward B2)</li>
+        </ul>
+
+        <h2>Volunteering & Social Impact</h2>
+        <ul>
+            <li>Volunteer in social impact initiatives: Boroume, Nea Zoi, Jafra Foundation</li>
+            <li>Computer literacy tutor (Social Hackers Academy, Jafra)</li>
+            <li>Featured contributor in <strong>Shedia</strong> anniversary edition</li>
+            <li>Advocate for accessibility and digital inclusion</li>
+        </ul>
     </main>
 </body>
 </html>
